@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.form-checkbox {
+  @apply h-4 w-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500 align-middle;
+}
+
+body {
+  font-size: 14px; /* Ajusta el tamaño global de texto */
+  overflow-y: auto; /* Permite solo scroll vertical si es necesario */
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+main {
+  max-height: calc(100vh - 120px); /* Ajusta la altura excluyendo el header */
+  overflow-y: auto; /* Habilita scroll si es necesario */
+}
+
+nav {
+  max-width: 240px; /* Limita el ancho del menú */
+  margin: 0 auto; /* Centra el contenido del menú */
+}
+
+img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto; /* Mantiene proporciones */
+}
+
+.form-checkbox {
+  @apply h-5 w-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500 align-middle;
+}
+
+label {
+  @apply flex items-center gap-2; /* Alineación y espaciado entre checkbox y texto */
+}
+
+label span {
+  @apply text-sm leading-tight; /* Tamaño de fuente y altura consistente */
+  vertical-align: middle; /* Centra el texto respecto al checkbox */
+}
+
+
